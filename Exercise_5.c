@@ -2,7 +2,8 @@
 Write a program that gets as input (from the user):
 1.=> Current Year.
 2.=> Your Age.
-    find the users birth year
+
+    The program should calculated and print the "Year you were Born"!
 */
 #include <stdio.h>
 int main()
