@@ -29,7 +29,7 @@ int main()
 
         // %2.lf num 2 use because i want to print only two digits after dot like 58.22.
 
-    printf("Area of Rectangle is: %2.lf\n",area);
+    printf("Area of Rectangle is: %lf\n",area);
 
     return 0;
 }
