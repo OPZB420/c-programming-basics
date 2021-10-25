@@ -15,23 +15,26 @@ The formula can be rearranged in three ways:
 
  => time = distance ÷ speed
 */
+
+
 #include<stdio.h>
 int main()
 {
-    float speed, distance, time;
+    int speed, distance, hours;
     
     printf("Enter the speed of the car: ");
-    scanf("%f",&speed);
+    scanf("%d",&speed);
     printf("Enter the Distance between City A to B: ");
-    scanf("%f",&distance);
+    scanf("%d",&distance);
 
     // We need to find time 
     
-    time = distance / speed;
+    hours = distance / speed;
     float speedinmin = speed/60.0;
-    float remainingmin = (distance/ speed) / speedinmin;
+    int remainingmin = (distance % speed) / speedinmin;
     
-    printf("Total time taken by car is: %2.f hour\n",time);
+    printf("Total time taken by car is: %2.d hours and %d min.\n",hours,remainingmin);
 
     return 0;
 }
+
